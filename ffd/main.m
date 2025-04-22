@@ -110,12 +110,6 @@ function [s,t,u] = convertToSTU(X,X0,S,T,U)
     denominator_s = dot(ST, U);
     u = numerator_S / denominator_s; 
     
-    % or in short, 
-    % note that in this case, X should be a 3*n matrix
-    % or say point X expressed by column vector
-    %     A = [S, T, U];
-    %     P = X - X0;
-    %     V = A \ P; %[s,t,u]=V(1),V(2),V(3);
     
 end
 
